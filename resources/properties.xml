@@ -1,0 +1,4 @@
+<properties>
+    <property id="apiEndpoint" type="string"></property>
+    <property id="apiKey" type="string"></property>
+</properties>

@@ -13,7 +13,6 @@ class GarminTodotxtWidgetView extends Ui.View {
     _todos = todos;
   }
 
-  // Helper function to word-wrap a string by words, maxLen per line
   function wordWrapByWords(text, maxLen) {
     var words = [];
     var s = text;
@@ -62,6 +61,7 @@ class GarminTodotxtWidgetView extends Ui.View {
         allLines.add(wrapped[j]);
       }
     }
+
     // Set up to max rows defined in layout
     for (var row = 1; row <= _rows; ++row) {
       var text = row - 1 < allLines.size() ? allLines[row - 1] : "";
