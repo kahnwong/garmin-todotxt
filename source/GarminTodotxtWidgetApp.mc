@@ -44,7 +44,6 @@ class GarminTodotxtWidgetApp extends App.AppBase {
       :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON,
       :headers => { "X-API-Key" => apiKey },
     };
-    var responseCallback = method(:onReceive);
 
     Communications.makeWebRequest(
       apiEndpoint,
